@@ -1,0 +1,26 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+
+# Runtime assets are downloaded from the GitHub release, not committed to Git.
+定位回放/
+定位所需資料/
+
+# Source-only inputs used to regenerate the offline replay.
+P1370137.MP4
+P1370137_sam3_processed.mp4
+原始稀疏點雲.ply
+稠密化之後點雲.ply
+分割後點雲.ply
+預算定位.py
+啟動展示.sh
+
+# Previous local packaging artifacts.
+可攜展示包/
+中央比賽_可攜展示包.tar.zst
+中央比賽_可攜展示包.tar.zst.sha256
+
+# Local build outputs.
+build/
+dist/

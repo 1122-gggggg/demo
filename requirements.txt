@@ -1,0 +1,4 @@
+# 可攜回放介面的最小 Python 環境；不需要 CUDA、EDM 或 MegaLoc。
+numpy==2.2.6
+opencv-python==4.13.0.92
+pillow==12.3.0
