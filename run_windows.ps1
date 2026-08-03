@@ -9,15 +9,15 @@ if (-not (Test-Path $VenvPython)) {
     } elseif (Get-Command python -ErrorAction SilentlyContinue) {
         & python -m venv .venv
     } else {
-        throw "找不到 Python 3.12。請先安裝 64 位元 Python 3.12。"
+        throw "Python 3.12 was not found. Install 64-bit Python 3.12 first."
     }
     if ($LASTEXITCODE -ne 0 -or -not (Test-Path $VenvPython)) {
-        throw "建立 .venv 失敗；請確認已安裝 64 位元 Python 3.12。"
+        throw "Failed to create .venv. Confirm that 64-bit Python 3.12 is installed."
     }
 }
 
 & $VenvPython -m pip install -r requirements.txt
-if ($LASTEXITCODE -ne 0) { throw "安裝 requirements.txt 失敗。" }
+if ($LASTEXITCODE -ne 0) { throw "Failed to install requirements.txt." }
 & $VenvPython scripts\download_demo_assets.py
-if ($LASTEXITCODE -ne 0) { throw "下載展示資產失敗。" }
+if ($LASTEXITCODE -ne 0) { throw "Failed to download demo assets." }
 & $VenvPython show.py
