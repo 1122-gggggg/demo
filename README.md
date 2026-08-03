@@ -1,5 +1,3 @@
-# 中央場域語意定位展示
-
 ## Windows 執行
 ```powershell
 git clone https://github.com/1122-gggggg/demo.git
