@@ -16,6 +16,12 @@ powershell -ExecutionPolicy Bypass -File .\run_windows.ps1
 .\.venv\Scripts\python.exe show.py
 ```
 
+## 操作
+
+- 左鍵雙擊：切換地圖中心
+- 右鍵拖曳：平移地圖
+- 滾輪：縮放地圖
+
 ## 專案結構
 
 ```text
